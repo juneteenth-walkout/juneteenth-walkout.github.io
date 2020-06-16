@@ -103,3 +103,59 @@ body {
   bottom: 0;
   z-index: -1;
 }
+
+/* Tablet-ish */
+@media (max-width: 1000px) {
+  .wrapper {
+    max-width: 700px;
+    padding: 40px 40px 0 40px;
+  }
+
+  .header {
+    height: 150px;
+  }
+
+  .title {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .content {
+    width: 600px;
+  }
+
+  .footer {
+    padding: 20px 50px;
+  }
+}
+
+/* Phone-ish */
+@media (max-width: 750px) {
+  .wrapper {
+    max-width: 500px;
+    padding: 20px 20px 0 20px;
+  }
+
+  .header {
+    height: 100px;
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .content {
+    max-width: 400px;
+    width: 80%;
+  }
+
+  .footer {
+    padding: 10px 20px;
+  }
+}
