@@ -133,8 +133,6 @@ body {
 /* Phone-ish */
 @media (max-width: 750px) {
   .wrapper {
-    /* max-width: 500px; */
-
     width: 100%;
     padding: 20px 20px 0;
   }
@@ -157,7 +155,6 @@ body {
   }
 
   .content {
-    /* max-width: 400px; */
     width: 100%;
   }
 
