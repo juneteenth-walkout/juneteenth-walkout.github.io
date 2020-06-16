@@ -55,6 +55,7 @@ body {
   color: #ffe;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+  letter-spacing: 7px;
 }
 
 .logo {
@@ -132,18 +133,23 @@ body {
 /* Phone-ish */
 @media (max-width: 750px) {
   .wrapper {
-    max-width: 500px;
-    padding: 20px 20px 0 20px;
+    /* max-width: 500px; */
+
+    width: 100%;
+    padding: 20px 20px 0;
   }
 
   .header {
-    height: 100px;
+    height: 80px;
     margin-bottom: 30px;
   }
 
   .title {
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .title__second {
+    letter-spacing: 4px;
   }
 
   .logo {
@@ -151,8 +157,13 @@ body {
   }
 
   .content {
-    max-width: 400px;
-    width: 80%;
+    /* max-width: 400px; */
+    width: 100%;
+  }
+
+  h2,
+  .bold {
+    font-size: 18px;
   }
 
   .footer {
