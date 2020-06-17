@@ -77,7 +77,8 @@ body {
 
 .call-to-action {
   display: inline-block;
-  background-color: #00861d;
+  background: #00861d;
+  border: 1px solid transparent;
   border-radius: 2px;
   font-size: 16px;
   color: white;
@@ -88,6 +89,18 @@ body {
 
 .call-to-action:hover {
   background-color: #005300;
+}
+
+.call-to-action--transparent {
+  background: transparent;
+  color: #00861d;
+  border: 1px solid #00861d;
+}
+
+.call-to-action--transparent:hover {
+  color: #005300;
+  background-color: transparent;
+  border-color: #005300;
 }
 
 .call-to-action:hover > span {
