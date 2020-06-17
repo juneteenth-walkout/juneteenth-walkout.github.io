@@ -1,5 +1,6 @@
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -7,7 +8,9 @@ h2 {
 
 p,
 a,
-li {
+li,
+input,
+label {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -72,10 +75,87 @@ body {
   margin-bottom: 50px;
 }
 
+.call-to-action {
+  display: inline-block;
+  background-color: #00861d;
+  border-radius: 2px;
+  font-size: 16px;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.call-to-action:hover {
+  background-color: #005300;
+}
+
+.call-to-action:hover > span {
+  text-decoration: underline;
+}
+
+.call-to-action__icon {
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  top: 3px;
+}
+
 .bold {
   font-weight: 700;
   font-size: 27px;
   line-height: 27px;
+}
+
+.resources-checkbox-label {
+  font-size: 20px;
+  cursor: pointer;
+  color: #00861d;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.resources-checkbox-label__chevron {
+  display: inline-block;
+  margin-right: 4px;
+  position: relative;
+  top: 3px;
+}
+
+.resources-checkbox-label:hover {
+  color: #005300;
+}
+
+/* screenreader-only */
+.resources-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.resources {
+  max-height: 0;
+  transition: max-height 0.8s;
+  overflow: hidden;
+}
+
+.resources a {
+  text-decoration: none;
+  color: #00861d;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+  color: #005300;
+}
+
+.resources-checkbox:checked + .resources {
+  max-height: 3000px;
 }
 
 .footer {
